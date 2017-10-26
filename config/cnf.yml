@@ -1,0 +1,12 @@
+defaults: &defaults
+  lookup_service: :google #available keys at https://github.com/alexreisner/geocoder#street-address-services
+  lookup_service_api_key: '' #key is optional - therefore not use for demo purposes
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
